@@ -242,6 +242,9 @@ footer nav a {
     border-bottom: 1px dashed black;
 }
 
+.bottom {
+    margin-top: 40px;
+}
 .about-container h2 {
     padding-top: 10px;
 }
