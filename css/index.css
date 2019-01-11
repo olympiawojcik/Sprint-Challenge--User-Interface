@@ -71,6 +71,26 @@ p {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    align-items: baseline;
+    padding: 20px 0 40px;
+}
+
+nav {
+    width: 80%;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 37px 0;
+}
+
+.jumbo {
+    margin-bottom: 20px
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -104,12 +124,64 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Styling boxes colors
+ box1: teal
+ box2: gold
+ box3: cadetblue
+ box4: coral
+ box5: crimson
+ box6: forestgreen
+ box7: darkorchid
+ box8: hotpink
+ box9: indigo
+ box10: dodgerblue
+ */
+
+.box1 {
+    background: teal;
+}
+
+.box2 {
+    background: gold;
+}
+
+.box3 {
+    background: cadetblue
+}
+
+.box4 {
+    background: coral;
+}
+
+.box5 {
+    background: crimson;
+}
+
+.box6 {
+    background: forestgreen;
+}
+
+.box7 {
+    background: darkorchid;
+}
+
+.box8 {
+    background: hotpink;
+}
+
+.box9 {
+    background: indigo;
+}
+
+.box10 {
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +215,84 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.about-page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.about-headerfooter {
+    padding: 0 20px 20px;
+}
+
+.about-headerfooter:first-of-type{
+    border-bottom: 1px dashed black;
+}
+
+.about-headerfooter:last-of-type {
+    margin: 30px 0 20px;
+}
+.about-container {
+    width: 47%;
+    padding: 0 0 20px;
+    margin: 10px;
+    border-bottom: 1px dashed black;
+}
+
+.bottom {
+    margin-top: 40px;
+}
+.about-container h2 {
+    padding-top: 10px;
+}
+
+.about-container button {
+    padding: 5px 20px 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}
+	50%{
+		transform: translateX(8%);
+	}
+	65%{
+		transform: translateX(-4%);
+	}
+	80%{
+		transform: translateX(4%);
+	}
+	95%{
+		transform: translateX(-2%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}	
+}
+.css-animation {
+    animation-name: slideRight;
+    animation-duration: 6s;
+}
+
+@keyframes Rotate {
+    0% {transform: rotate(0%);}
+    100% {transform: rotate(180deg);}
+}
+
+.box:hover {
+    animation-name: Rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    background-color: black;
+    /* transform: rotate(45deg) */
 }

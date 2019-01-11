@@ -34,13 +34,46 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+    Semantic HTML is HTML that provides *MEANING* to your content - it is the process of using more meaningful tags to better describe your code. Some example of semantic HTML tags include <h1> <p> <header> <nav> <footer> and <section>.  
+
+    In contrast, presentational HTML is HTML that does not convey meaning. For example, we use divs to create space, add structure, or style elements - however these do not contain meaning; neither do tags like <b> or <i> because they define how something should look or be presented, not what they mean. 
+
+    Semantic HTML is important because it makes our code more readable, organized, and easier to maintain. It also makes our web pages more readable and easily interpreted by machines, screen readers, and search engines.
+
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+    Every HTML element on the screen is a box and they come in two kinds: block boxes and inline boxes. We can use the CSS display property to change the presentation of an element from block to inline and vice versa. 
+
+    display: block -   A block level element
+        a) Always starts on a new line
+        b) Takes up the full width available in the parent element/container, stretching out to the left & right
+        c) Can be controlled using height and width properties
+        d) Examples:  <div> and <p>
+
+    display: inline --> An in-line element 
+        a) Does not start on a new line; instead is nested within other elements
+        b) Only takes up as much space as its contents
+        c) Height and width have no effect
+        d) Examples: <span> <a> <button> <img> <em> 
+
 
 3. What are the 4 areas of the box model?
 
+	1. Content- The space within the model in which our text and images are rendered
+	2. Padding- Space between content and border
+	3. Border- A border that we can style around the padding and content of a box
+	4. Margin- The space between the border and everything else on the page; pushes elements AWAY from other items
+
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
+    
+    The CROSS axis. JUSTIFY = MAIN, ALIGN = CROSS. 
 
 5. Explain why git is valuable to a team of developers.
+    
+    Git is a program that runs on our local computer that performs version control, allowing us to track the changes we've made to our code base. It's valuable to a team of developers because it lets them collaborate and coordinate changes while hosting a project on a remote repository like Github. Through the process of branching, developers can work on code without affecting the main code base. Once those changes are made, developers can submit a pull request- this allows other developers on the project to discuss and review the changes you've made to the code before those changes are merged into the main code base.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
