@@ -283,3 +283,16 @@ footer nav a {
     animation-name: slideRight;
     animation-duration: 6s;
 }
+
+@keyframes Rotate {
+    0% {transform: rotate(0%);}
+    100% {transform: rotate(180deg);}
+}
+
+.box:hover {
+    animation-name: Rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    background-color: black;
+    /* transform: rotate(45deg) */
+}
