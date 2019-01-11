@@ -88,7 +88,7 @@ nav a {
 }
 
 .jumbo {
-    margin-bottom: 20px
+    margin: 20px 0 60px;
 }
 
 .top-content {
@@ -294,5 +294,74 @@ footer nav a {
     animation-duration: 1s;
     animation-iteration-count: infinite;
     background-color: black;
-    /* transform: rotate(45deg) */
+}    
+
+hr {
+    height: 3px;
+    width: 18%;
+    margin-left: 0;
+    background-color: black;
+    border: 1px solid black;
+    transition: .3s ease-in-out;
+
 }
+
+.home:hover ~ hr{
+    display: block;
+    margin-left: -0%;
+}
+
+.about:hover ~ hr{
+    display: block;
+    margin-left: 20%;
+}
+
+.products:hover ~ hr{
+    display: block;
+    margin-left: 40%;
+}
+
+.blog:hover ~ hr{
+    display: block;
+    margin-left: 60%;
+}
+
+.contact:hover ~ hr{
+    display: block;
+    margin-left: 80%;
+    background-color: black;
+    border: none;
+}
+
+
+/* The tilde ~ is a general sibling selector
+It separates 2 selectors and matches the 2nd element
+ONLY if it follows the ifrst element (tho not necessarily
+immed) and both are the children of the same parent element
+
+img ~ p {
+    color: red
+}
+
+^This is paragraphs that are siblings of and subsequent to
+ANY image
+
+
+EX: 
+HTML
+<div>
+<p>Para One</p>
+<p>Para Two</p>
+<div>block</div>
+<p>Para Three</p>
+<p>Fourth Para</p>
+</div>
+
+CSS
+p ~ p {
+background-color: yellow;
+color:blue;
+font-size: 22px;
+}
+
+*/
