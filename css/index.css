@@ -257,3 +257,29 @@ footer nav a {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
+
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}
+	50%{
+		transform: translateX(8%);
+	}
+	65%{
+		transform: translateX(-4%);
+	}
+	80%{
+		transform: translateX(4%);
+	}
+	95%{
+		transform: translateX(-2%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}	
+}
+.css-animation {
+    animation-name: slideRight;
+    animation-duration: 6s;
+}
