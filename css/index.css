@@ -87,7 +87,7 @@ nav a {
     padding: 0 37px 0;
 }
 
-.large-image {
+.jumbo {
     margin-bottom: 20px
 }
 
@@ -215,4 +215,23 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.about-page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.about-headerfooter {
+    padding: 0 20px 20px;
+}
+
+.about-headerfooter:first-of-type{
+    border-bottom: 1px dashed black;
+}
+
+.about-container {
+    width: 47%;
 }
